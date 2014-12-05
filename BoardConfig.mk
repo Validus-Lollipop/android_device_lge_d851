@@ -26,6 +26,10 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_d851_defconfig
+TARGET_GCC_VERSION_ARM := 4.8-sm
+
+# Validus optimizations
+VALIDUS4LIFE=true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
