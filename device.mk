@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/lge/d851/d851-vendor.mk)
 
 # Audio
-# PRODUCT_COPY_FILES += \
-   #  device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml
+PRODUCT_COPY_FILES += \
+    device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
